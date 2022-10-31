@@ -1,13 +1,21 @@
-import { Typography } from "@mui/material"
-import { Box } from "@mui/system"
 import React from "react"
-const urls = [83]
-const UrlLinks = () => {
+import { StaticQuery, graphql } from "gatsby"
+
+export default function UrlLinks() {
   return (
-    <Box>
-      <Typography>Djerba</Typography>
-    </Box>
+    <StaticQuery
+      query={graphql`
+        query {
+          allDbJson {
+            edges {
+              node {
+                Slug_01
+              }
+            }
+          }
+        }
+      `}
+      render={data => <h1>{console.log(data)}</h1>}
+    />
   )
 }
-
-export default UrlLinks
