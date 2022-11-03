@@ -5,10 +5,9 @@ import { Box, Container, TextField } from "@mui/material"
 import FormInput from "../../components/forms/toConvertForm/formInput"
 import useNumberToLetter from "../../components/lib/numberToLetter"
 import DisplayResultValue from "../../components/forms/toConvertForm/displayResultValue"
-import { Link } from "gatsby-theme-material-ui"
-import UrlLinks from "../../components/links"
+import { Link } from "gatsby"
 
-const items = [1, 2, 3, 4, 5]
+const items = [-1, -3, 1, 2, 3, 4, 5]
 
 const ConvertPage = props => {
   const [numberValue, setNumbertoletter] = useNumberToLetter()
@@ -20,6 +19,7 @@ const ConvertPage = props => {
     setVisible(visible => (visible = true))
   }, [value])
   const nb = props.data.dbJson.number
+
   return (
     <Layout>
       <Box sx={{ my: "80px", textAlign: "center" }}>
@@ -31,17 +31,22 @@ const ConvertPage = props => {
         )}
       </Box>
       Links:
-      {items.map(item => (
-        <Link to={`/conversion/comment-ecrire-${item + nb}-en-lettres`}>
-          Comment écrire {item + nb}
-        </Link>
-      ))}
+      {items.map(item => {
+        if (nb + item >= 0 && nb + item <= 20) {
+          return (
+            <p>
+              <Link to={`/conversion/comment-ecrire-${item + nb}-en-lettres`}>
+                Comment écrire {item + nb}
+              </Link>
+            </p>
+          )
+        }
+      })}
       <Container maxWidth="md">
         <FormInput
           onSubmit={data => setValue(value => (value = data.inputValue))}
         />
         {visible && <DisplayResultValue resultValue={numberValue} />}
-        <UrlLinks />
       </Container>
     </Layout>
   )

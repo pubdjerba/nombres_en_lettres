@@ -6,6 +6,13 @@ const Privacy = () => {
     <Box>
       <h1>Politique de confidentialité</h1>
       <h4>Date de dernière mise à jour : [Date du jour]</h4>
+      La protection de données à caractère personnel est en particulier régie
+      par le Règlement (EU) 2016/679 du Parlement Européen et du Conseil du 27
+      avril 2016 relatif à la protection des personnes physiques à l’égard du
+      traitement de données à caractère personnel et à la libre circulation de
+      ces données, autrement appelé le Règlement général sur la protection des
+      données (ci-après le « RGPD ») et de la Loi n° 78-17 du 6 janvier 1978
+      modifiée dite « Loi informatique et libertés ».
       <h3>ARTICLE 1 : COLLECTE DE VOS INFORMATIONS</h3>
       <p>
         Nous recueillons des informations lorsque vous remplissez nos

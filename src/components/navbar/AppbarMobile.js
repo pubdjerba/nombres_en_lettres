@@ -50,7 +50,7 @@ export default function TemporaryDrawer({ siteTitle }) {
   )
 
   return (
-    <AppBar position="fixed">
+    <AppBar position="static">
       <Toolbar>
         <MenuIcon
           onClick={toggleDrawer(anchor, true)}
