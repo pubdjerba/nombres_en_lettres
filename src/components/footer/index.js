@@ -26,7 +26,7 @@ export default function Footer() {
                 </Link>
               </Box>
               <Box>
-                <Link href="/politique-de-confidentialite" color="inherit">
+                <Link to="/legal/politique-de-confidentialite" color="inherit">
                   Privacy
                 </Link>
               </Box>
@@ -64,7 +64,9 @@ export default function Footer() {
             </Grid>
           </Grid>
           <Box textAlign="center" pt={{ xs: 5, sm: 10 }} pb={{ xs: 5, sm: 0 }}>
-            Material UI Workshop &reg; {new Date().getFullYear()}
+            Material UI Workshop &reg; {new Date().getFullYear()}©{" "}
+            {new Date().getFullYear()} &middot; Built with
+            <a href="https://www.gatsbyjs.com">Gatsby</a>
           </Box>
         </Container>
       </Box>

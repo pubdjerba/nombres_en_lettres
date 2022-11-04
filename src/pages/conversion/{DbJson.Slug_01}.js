@@ -6,10 +6,7 @@ import FormInput from "../../components/forms/toConvertForm/formInput"
 import useNumberToLetter from "../../components/lib/numberToLetter"
 import DisplayResultValue from "../../components/forms/toConvertForm/displayResultValue"
 import { Link } from "gatsby"
-<<<<<<< HEAD
-import UrlLinks from "../../components/links"
-=======
->>>>>>> f47635049605431c75f8e33e2444345b34ff9206
+
 
 const items = [-1, -3, 1, 2, 3, 4, 5]
 

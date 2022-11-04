@@ -5,7 +5,6 @@ import theme from "../styles/theme"
 
 import Banner from "../components/banner"
 
-import Footer from "../components/footer"
 import ToConvertForm from "../components/forms/toConvertForm"
 
 const IndexPage = () => (
@@ -14,8 +13,6 @@ const IndexPage = () => (
       <Layout>
         <Banner />
         <ToConvertForm />
-
-        <Footer />
       </Layout>
     </ThemeProvider>
   </>
