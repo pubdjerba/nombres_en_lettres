@@ -5,7 +5,7 @@ import { Box, Container, TextField } from "@mui/material"
 import FormInput from "../../components/forms/toConvertForm/formInput"
 import useNumberToLetter from "../../components/lib/numberToLetter"
 import DisplayResultValue from "../../components/forms/toConvertForm/displayResultValue"
-import { Link } from "gatsby-theme-material-ui"
+import { Link } from "gatsby"
 import UrlLinks from "../../components/links"
 
 const items = [1, 2, 3, 4, 5]

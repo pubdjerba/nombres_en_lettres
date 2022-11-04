@@ -1,7 +1,5 @@
 import React, { useEffect } from "react"
-import { Paper, TextField } from "@mui/material"
-
-import { Button } from "gatsby-theme-material-ui"
+import { Paper, TextField, Button } from "@mui/material"
 
 import { useForm } from "react-hook-form"
 

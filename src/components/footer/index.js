@@ -1,5 +1,5 @@
 import { Box, Container, Grid } from "@mui/material"
-import { Link } from "gatsby-theme-material-ui"
+import { Link } from "gatsby"
 import * as React from "react"
 
 export default function Footer() {
