@@ -7,7 +7,6 @@ import Banner from "../components/banner"
 
 import Footer from "../components/footer"
 import ToConvertForm from "../components/forms/toConvertForm"
-import UrlLinks from "../components/links"
 
 const IndexPage = () => (
   <>
@@ -15,7 +14,7 @@ const IndexPage = () => (
       <Layout>
         <Banner />
         <ToConvertForm />
-        <UrlLinks />
+
         <Footer />
       </Layout>
     </ThemeProvider>
