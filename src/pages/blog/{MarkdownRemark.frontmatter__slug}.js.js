@@ -12,7 +12,7 @@ export default function Template({
   console.log(data)
   return (
     <Layout>
-      <Box sx={{}}>
+      <Box>
         <ToConvertForm />
         <div className="blog-post-container">
           <div className="blog-post">
