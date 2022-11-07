@@ -1,5 +1,6 @@
 import { createTheme, responsiveFontSizes } from "@mui/material/styles"
-
+import "@fontsource/roboto"
+/* Weights: [100,300,400,500,700,900] */
 let theme = createTheme({
   palette: {
     primary: {

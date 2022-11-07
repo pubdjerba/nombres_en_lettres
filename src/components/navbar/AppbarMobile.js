@@ -6,7 +6,6 @@ import List from "@mui/material/List"
 import ListItem from "@mui/material/ListItem"
 import ListItemButton from "@mui/material/ListItemButton"
 import ListItemText from "@mui/material/ListItemText"
-
 import { AppBar, Divider, Toolbar, Typography } from "@mui/material"
 import { menuItems } from "./menuItems"
 
@@ -34,7 +33,7 @@ export default function TemporaryDrawer({ siteTitle }) {
       <Typography
         sx={{ textAlign: "center", fontSize: "4vw", fontWeight: "400", py: 1 }}
       >
-        {siteTitle}
+        MENU
       </Typography>
       <Divider />
       <List>
@@ -50,8 +49,8 @@ export default function TemporaryDrawer({ siteTitle }) {
   )
 
   return (
-    <AppBar position="static">
-      <Toolbar>
+    <AppBar position="sticky">
+      <Toolbar sx={{ justifyContent: "space-between" }}>
         <MenuIcon
           onClick={toggleDrawer(anchor, true)}
           sx={{
@@ -65,6 +64,8 @@ export default function TemporaryDrawer({ siteTitle }) {
         >
           {list()}
         </Drawer>
+
+        <Typography>{siteTitle}</Typography>
       </Toolbar>
     </AppBar>
   )

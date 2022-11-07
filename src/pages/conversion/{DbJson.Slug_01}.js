@@ -6,7 +6,7 @@ import FormInput from "../../components/forms/toConvertForm/formInput"
 import useNumberToLetter from "../../components/lib/numberToLetter"
 import DisplayResultValue from "../../components/forms/toConvertForm/displayResultValue"
 import { Link } from "gatsby"
-
+import PageBody from "../../components/body"
 
 const items = [-1, -3, 1, 2, 3, 4, 5]
 
@@ -49,6 +49,7 @@ const ConvertPage = props => {
         />
         {visible && <DisplayResultValue resultValue={numberValue} />}
       </Container>
+      <PageBody />
     </Layout>
   )
 }

@@ -8,10 +8,10 @@ const Banner = () => {
     <Container maxWidth="lg" sx={{ marginTop: "80px" }}>
       <Stack direction={{ sm: "column", md: "row" }}>
         <Box flex={6}>
-          <Typography variant="h1" component="h1">
+          <Typography fontWeight="900" variant="h2" component="h1">
             Ecrire les chiffres en toutes lettres
           </Typography>
-          <Typography variant="h2" paddingTop="50px">
+          <Typography fontWeight="700" variant="h4" paddingTop="50px">
             Avec cet outil vous pouvez convertir les chiffres en lettres sans
             fautes d'orthographe
           </Typography>

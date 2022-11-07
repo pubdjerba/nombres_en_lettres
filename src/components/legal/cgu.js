@@ -1,31 +1,35 @@
 import React from "react"
+import { useStaticQuery, graphql } from "gatsby"
 
 const Cgu = () => {
+  const data = useStaticQuery(graphql`
+    query SiteTitleQuery {
+      site {
+        siteMetadata {
+          title
+        }
+      }
+    }
+  `)
+  const { title } = data.site.siteMetadata
+
   return (
     <div>
       <h1>Conditions d’utilisation</h1>
-      <h4>Date de dernière mise à jour : [Date du jour]</h4>
-      <h3>ARTICLE 1 : INFORMATIONS LEGALES</h3>
+      <h4>Date de dernière mise à jour : 20 Novembre 2022</h4>
+
+      <h3>ARTICLE 1 : PRESENTATION DU SITE</h3>
       <p>
-        Le site [tonsite.com] est édité par l'entreprise : [Ton entreprise],
-        dont le siège social est situé à l'adresse suivante : [Ton adresse].
-        Adresse e-mail : [Ton adresse e-mail] Téléphone : [Ton numéro de
-        téléphone] Le directeur de publication du site est : Monsieur/Madame
-        [Ton Prénom et Nom]. Le site [tonsite.com] est hébergé par : WIX.COM
-        LTD, dont le siège est situé à l'adresse suivante : 40 Port de Tel Aviv,
-        Tel Aviv Jaffa 6350671. [A changer avec l'adresse de ton hébergeur si tu
-        n'es pas un utilisateur Wix]
+        Le site <b>{title}</b> a pour objet : fournir aux utilisateurs un outil
+        gratuit pour conversion les chiffres en lettres.
       </p>
-      <h3>ARTICLE 2 : PRESENTATION DU SITE</h3>
-      <p> Le site [tonsite.com] a pour objet : [Décris ton activité]</p>
-      <h3>ARTICLE 3 : CONTACT</h3>
+      <h3>ARTICLE 2 : CONTACT</h3>
       <p>
         Pour toute question ou demande d'information concernant le site, ou tout
         signalement de contenu ou d'activités illicites, l'utilisateur peut
-        contacter l'éditeur à l'adresse e-mail suivante : [Ton adresse e-mail]
-        ou par téléphone au numéro : [Ton numéro de téléphone]
+        contacter l'éditeur en remplissant le formulaire de contact.
       </p>
-      <h3>ARTICLE 4 : ACCEPTATION DES CONDITIONS</h3>
+      <h3>ARTICLE 3 : ACCEPTATION DES CONDITIONS</h3>
       <p>
         L'accès et l'utilisation du site sont soumis à l'acceptation et au
         respect des présentes conditions générales d'utilisation. L'éditeur se
@@ -39,7 +43,7 @@ const Cgu = () => {
         avec les conditions générales d'utilisation, aucun usage du site ne
         saurait être effectué par l'utilisateur.
       </p>
-      <h3>ARTICLE 5 : ACCES ET NAVIGATION</h3>
+      <h3>ARTICLE 4 : ACCES ET NAVIGATION</h3>
       <p>
         L'éditeur met en oeuvre les solutions techniques à sa disposition pour
         permettre l'accès au site 24 heures sur 24, 7 jours sur 7. Il pourra
@@ -47,21 +51,21 @@ const Cgu = () => {
         site ou à certaines pages de celui-ci afin de procéder à des mises à
         jour, des modifications de son contenu ou tout autre action jugée
         nécessaire au bon fonctionnement du site. La connexion et la navigation
-        sur le site [tonsite.com] valent l'acceptation sans réserve des
-        présentes conditions générales d'utilisation, quelques soient les moyens
+        sur le site {title} valent l'acceptation sans réserve des présentes
+        conditions générales d'utilisation, quelques soient les moyens
         techniques d'accès et les terminaux utilisés. Les présentes conditions
         générales d'utilisation s'appliquent, en tant que de besoin, à toute
         déclinaison ou extension du site sur les réseaux sociaux et/ou
         communautaire.
       </p>
-      <h3>ARTICLE 6 : GESTION DU SITE</h3>
+      <h3>ARTICLE 5 : GESTION DU SITE</h3>
       <p>
         Pour la bonne gestion du site, l'éditeur pourra à tout moment :
         <ul>
           <li>
             Suspendre, interrompre ou limiter l'accès à tout ou partie du site,
             réserver l'accès au site, ou à certaines parties du site, à une
-            catégorie déterminée d'internaute(s) ;{" "}
+            catégorie déterminée d'internaute(s) ;
           </li>
 
           <li>
@@ -73,7 +77,7 @@ const Cgu = () => {
           <li> Suspendre le site afin de procéder à des mises à jour.</li>
         </ul>
       </p>
-      <h3>ARTICLE 7 : RESPONSABILITES </h3>
+      <h3>ARTICLE 6 : RESPONSABILITES </h3>
       <p>
         L'éditeur n'est responsable que du contenu qu'il a lui-même édité.
         L'éditeur n'est pas responsable :
@@ -110,7 +114,7 @@ const Cgu = () => {
           </li>
         </ul>
       </p>
-      <h3>ARTICLE 8 : LIENS HYPERTEXTES </h3>
+      <h3>ARTICLE 7 : LIENS HYPERTEXTES </h3>
       <p>
         Le site peut contenir des liens hypertextes pointant vers d'autres sites
         internet sur lesquels [tonsite.com] n'exerce pas de contrôle. Malgré les
@@ -124,20 +128,19 @@ const Cgu = () => {
         de cette autorisation les sites diffusant des informations à caractère
         illicite, violent, polémique, pornographique, xénophobe ou pouvant
         porter atteinte à la sensibilité du plus grand nombre. Enfin,
-        [tonsite.com] se réserve le droit de faire supprimer à tout moment un
-        lien hypertexte pointant vers son site, si l'éditeur l'estime non
-        conforme à sa politique éditoriale.
+        {title} se réserve le droit de faire supprimer à tout moment un lien
+        hypertexte pointant vers son site, si l'éditeur l'estime non conforme à
+        sa politique éditoriale.
       </p>
-      <h3>ARTICLE 9 : COOKIES</h3>
+      <h3>ARTICLE 8 : COOKIES</h3>
       <p>
-        {" "}
         Le site a recours aux techniques de "cookies" lui permettant de traiter
         des statistiques et des informations sur le trafic, de faciliter la
         navigation et d'améliorer le service pour le confort de l'utilisateur,
         lequel peut s'opposer à l'enregistrement de ces "cookies" en configurant
         son logiciel de navigation.
       </p>
-      <h3>ARTICLE 10 : PROPRIETE INTELLECTUELLE</h3>
+      <h3>ARTICLE 9 : PROPRIETE INTELLECTUELLE</h3>
       <p>
         La structuration du site mais aussi les textes, graphiques, images,
         photographies, sons, vidéos et applications informatiques qui le

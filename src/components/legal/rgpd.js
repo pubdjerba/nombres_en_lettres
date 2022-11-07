@@ -1,11 +1,22 @@
 import { Box } from "@mui/material"
 import React from "react"
-
+import { useStaticQuery, graphql } from "gatsby"
 const Rgpd = () => {
+  const data = useStaticQuery(graphql`
+    query SiteTitleQuery {
+      site {
+        siteMetadata {
+          title
+        }
+      }
+    }
+  `)
+  const { title } = data.site.siteMetadata
+
   return (
     <Box>
       <h1>Politique de confidentialité</h1>
-      <h4>Date de dernière mise à jour : [Date du jour]</h4>
+      <h4>Date de dernière mise à jour : 20 Novembre 2022</h4>
       La protection de données à caractère personnel est en particulier régie
       par le Règlement (EU) 2016/679 du Parlement Européen et du Conseil du 27
       avril 2016 relatif à la protection des personnes physiques à l’égard du
@@ -66,10 +77,8 @@ const Rgpd = () => {
       <h3>ARTICLE 6 : COPIE OU SUPPRESSION DE VOS INFORMATIONS</h3>
       <p>
         Nous stockons les données transmises via nos différents formulaires de
-        contact. Cependant, vous avez la possibilité de nous contacter par
-        e-mail à [Ton adresse e-mail] ou par téléphone au [Ton numéro de
-        téléphone] pour toute demande de copie ou de suppression de vos données
-        personnelles que nous stockons.
+        contact. Cependant, vous avez la possibilité de nous contacter en
+        remplissant le formulaire sur notre site.
       </p>
       <h3>ARTICLE 7 : ENVOI DE NEWSLETTERS</h3>
       <p>
@@ -81,8 +90,7 @@ const Rgpd = () => {
       <p>
         Notre hébergeur possède sa propre politique de confidentialité
         concernant l'utilisation de vos données que vous pouvez consulter en
-        tout temps [ici : lien de la politique de confidentialité de
-        l'hébergeur].
+        tout temps sur le site de Netlify.
       </p>
       <h3>ARTICLE 9 : CONSENTEMENT A NOTRE POLITIQUE</h3>
       <p>
