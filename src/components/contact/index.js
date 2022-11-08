@@ -73,7 +73,6 @@ export default function SignIn() {
             label="Adresse email"
             name="email"
             autoComplete="off"
-            autoFocus
           />
           <TextField
             margin="normal"
