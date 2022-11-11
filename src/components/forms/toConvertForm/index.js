@@ -18,13 +18,12 @@ const ToConvertForm = resultValue => {
 
   return (
     <Container maxWidth="md">
-      
-      {visible && <h1>{value} en lettres</h1>}
       <FormInput
         onSubmit={data => {
           setValue(value => (value = data.inputValue))
         }}
       />
+      {visible && <h1>{value} en lettres</h1>}
       {visible && <DisplayResultValue resultValue={numberValue} />}
     </Container>
   )
