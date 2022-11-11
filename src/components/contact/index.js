@@ -28,7 +28,7 @@ function Copyright(props) {
   )
 }
 
-export default function SignIn() {
+export default function Contact() {
   const handleSubmit = event => {
     event.preventDefault()
     const data = new FormData(event.currentTarget)

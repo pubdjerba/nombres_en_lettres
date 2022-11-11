@@ -1,5 +1,5 @@
 import {
-  IconButton,
+  Button,
   InputAdornment,
   InputBase,
   Paper,
@@ -7,34 +7,42 @@ import {
   Typography,
 } from "@mui/material"
 import { Box } from "@mui/system"
-import React, { useState } from "react"
-import AssignmentIcon from "@mui/icons-material/Assignment"
+import React, { useState, useEffect } from "react"
 
+import { styled } from "@mui/material/styles"
+const StyledPaper = styled(Paper)`
+  background-color: #f6f8fa;
+  margin: 0;
+  padding: 2rem 1rem;
+  border-radius: 10px;
+  padding: 1rem 1rem 4rem 1rem;
+`
 const DisplayResultValue = ({ resultValue }) => {
+  useEffect(() => {
+    const el = document.getElementById("content")
+    console.log(el.value)
+  }, [])
+
   return (
     <Box sx={{ my: "50px" }}>
-      <Paper variant="outlined" sx={{ pb: "60px", pt: "16px" }}>
+      <StyledPaper variant="outlined" id="content">
         <InputBase
-          sx={{
-            paddingLeft: "16px",
-            fontSize: { xs: "16px", sm: "18px", md: "24px", lg: "24" },
-            fontWeight: "600",
-          }}
           id="content"
-          multiline
           fullWidth
+          readOnly
+          sx={{ fontSize: "1.1rem" }}
+          multiline
           value={resultValue}
           endAdornment={
             <InputAdornment position="end">
-              <IconButton large>
-                <AssignmentIcon />
-              </IconButton>
+              <Button variant="outlined">Copier</Button>
             </InputAdornment>
           }
         />
-      </Paper>
+      </StyledPaper>
     </Box>
   )
 }
 
+console.log("hi")
 export default DisplayResultValue
