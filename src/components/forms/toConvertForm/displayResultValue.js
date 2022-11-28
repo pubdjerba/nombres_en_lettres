@@ -1,13 +1,13 @@
 import {
   Button,
+  ClickAwayListener,
   InputAdornment,
   InputBase,
   Paper,
-  TextField,
-  Typography,
+  Tooltip,
 } from "@mui/material"
 import { Box } from "@mui/system"
-import React, { useState, useEffect } from "react"
+import React, { useState } from "react"
 
 import { styled } from "@mui/material/styles"
 const StyledPaper = styled(Paper)`
@@ -18,14 +18,34 @@ const StyledPaper = styled(Paper)`
   padding: 1rem 1rem 4rem 1rem;
 `
 const DisplayResultValue = ({ resultValue }) => {
-  useEffect(() => {
-    const el = document.getElementById("content")
-    console.log(el.value)
-  }, [])
+  const [open, setOpen] = useState(false)
+  const handleTooltipClose = () => {
+    setOpen(false)
+  }
+
+  const handleTooltipOpen = () => {
+    setOpen(true)
+  }
+
+  function CopyValue() {
+    var copyText = document.getElementById("content")
+
+    copyText.select()
+    copyText.setSelectionRange(0, 99999) // For mobile devices
+
+    navigator.clipboard.writeText(copyText.value).then(
+      () => {
+        handleTooltipOpen()
+      },
+      () => {
+        console.log("clipboard write failed")
+      }
+    )
+  }
 
   return (
-    <Box sx={{ my: "50px" }}>
-      <StyledPaper variant="outlined" id="content">
+    <Box sx={{ mt: "0.5rem", marginBottom: "2rem" }}>
+      <StyledPaper variant="outlined">
         <InputBase
           id="content"
           fullWidth
@@ -34,8 +54,37 @@ const DisplayResultValue = ({ resultValue }) => {
           multiline
           value={resultValue}
           endAdornment={
-            <InputAdornment position="end">
-              <Button variant="outlined">Copier</Button>
+            <InputAdornment
+              sx={{ display: { xs: "none", sm: "block" } }}
+              position="end"
+            >
+              <ClickAwayListener onClickAway={handleTooltipClose}>
+                <div>
+                  <Tooltip
+                    open={open}
+                    arrow
+                    placement="top"
+                    componentsProps={{
+                      tooltip: {
+                        sx: {
+                          bgcolor: "#1187F3",
+                          "& .MuiTooltip-arrow": {
+                            color: "#1187F3",
+                          },
+                        },
+                      },
+                    }}
+                    disableFocusListener
+                    disableHoverListener
+                    disableTouchListener
+                    title="Texte copié !"
+                  >
+                    <Button variant="outlined" onClick={CopyValue}>
+                      Copier
+                    </Button>
+                  </Tooltip>
+                </div>
+              </ClickAwayListener>
             </InputAdornment>
           }
         />
@@ -44,5 +93,4 @@ const DisplayResultValue = ({ resultValue }) => {
   )
 }
 
-console.log("hi")
 export default DisplayResultValue

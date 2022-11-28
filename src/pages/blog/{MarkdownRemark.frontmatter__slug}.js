@@ -3,28 +3,30 @@ import { graphql } from "gatsby"
 import Layout from "../../components/layout"
 import ToConvertForm from "../../components/forms/toConvertForm"
 import { Box } from "@mui/system"
-
+import Container from "@mui/material/Container"
 export default function Template({
   data, // this prop will be injected by the GraphQL query below.
 }) {
   const { markdownRemark } = data // data.markdownRemark holds your post data
   const { frontmatter, html } = markdownRemark
-  console.log(data)
+
   return (
     <Layout>
-      <Box>
-        <ToConvertForm />
-        <div className="blog-post-container">
-          <div className="blog-post">
-            <h1>{frontmatter.title}</h1>
-            <h2>{frontmatter.date}</h2>
-            <div
-              className="blog-post-content"
-              dangerouslySetInnerHTML={{ __html: html }}
-            />
+      <Container maxWidth="lg">
+        <Box>
+          <ToConvertForm />
+          <div className="blog-post-container">
+            <div className="blog-post">
+              <h1>{frontmatter.title}</h1>
+              <h2>{frontmatter.date}</h2>
+              <div
+                className="blog-post-content"
+                dangerouslySetInnerHTML={{ __html: html }}
+              />
+            </div>
           </div>
-        </div>
-      </Box>
+        </Box>
+      </Container>
     </Layout>
   )
 }

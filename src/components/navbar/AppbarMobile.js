@@ -31,7 +31,12 @@ export default function TemporaryDrawer({ siteTitle }) {
       onKeyDown={toggleDrawer(anchor, false)}
     >
       <Typography
-        sx={{ textAlign: "center", fontSize: "4vw", fontWeight: "400", py: 1 }}
+        sx={{
+          textAlign: "center",
+          fontSize: "3.5vw",
+          fontWeight: "400",
+          py: 1,
+        }}
       >
         MENU
       </Typography>

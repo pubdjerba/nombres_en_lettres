@@ -19,19 +19,22 @@ export default function AppbarDesktop({ siteTitle }) {
         <Toolbar sx={{ justifyContent: "space-between" }}>
           <Stack direction="row" alignItems="center" spacing={2}>
             <Box maxWidth="40px">
-              <StaticImage src="../../images/logo.svg" />
+              <StaticImage
+                src="../../images/logo.svg"
+                alt="nombres en lettres"
+              />
             </Box>
-            <Typography variant="h5" fontWeight="700" component="h2">
+            <Typography fontWeight="500" component="h2">
               {siteTitle}
             </Typography>
           </Stack>
-          <Stack direction="row" alignItems="center" spacing={2}>
+          <Stack direction="row" alignItems="center" spacing={1}>
             {menuItems.map((item, i) => (
               <Button
                 component={Link}
                 to={item.link}
                 key={i}
-                sx={{ color: "#fff", fontSize: "1.1rem", fontWeight: "500" }}
+                sx={{ color: "#fff" }}
               >
                 {item.name}
               </Button>

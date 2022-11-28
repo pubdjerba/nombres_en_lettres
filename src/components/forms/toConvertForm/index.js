@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react"
-import { Box, Container, TextField } from "@mui/material"
+import { Box, Container, Typography } from "@mui/material"
 import FormInput from "./formInput"
 import useNumberToLetter from "../../lib/numberToLetter"
 import DisplayResultValue from "./displayResultValue"
@@ -23,7 +23,13 @@ const ToConvertForm = resultValue => {
           setValue(value => (value = data.inputValue))
         }}
       />
-      {visible && <h1>{value} en lettres</h1>}
+      <Box sx={{ mt: "1rem" }}>
+        {visible && (
+          <Typography fontWeight="600" variant="body1" color="#1187F3">
+            Le nombre {value} en lettres:
+          </Typography>
+        )}
+      </Box>
       {visible && <DisplayResultValue resultValue={numberValue} />}
     </Container>
   )

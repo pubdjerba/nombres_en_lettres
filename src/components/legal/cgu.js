@@ -1,23 +1,13 @@
 import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
+import { useSiteMetadata } from "../../hooks/use-site-metadata"
 
 const Cgu = () => {
-  const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `)
-  const { title } = data.site.siteMetadata
+  const { title } = useSiteMetadata()
 
   return (
     <div>
       <h1>Conditions d’utilisation</h1>
       <h4>Date de dernière mise à jour : 20 Novembre 2022</h4>
-
       <h3>ARTICLE 1 : PRESENTATION DU SITE</h3>
       <p>
         Le site <b>{title}</b> a pour objet : fournir aux utilisateurs un outil
@@ -59,61 +49,59 @@ const Cgu = () => {
         communautaire.
       </p>
       <h3>ARTICLE 5 : GESTION DU SITE</h3>
-      <p>
-        Pour la bonne gestion du site, l'éditeur pourra à tout moment :
-        <ul>
-          <li>
-            Suspendre, interrompre ou limiter l'accès à tout ou partie du site,
-            réserver l'accès au site, ou à certaines parties du site, à une
-            catégorie déterminée d'internaute(s) ;
-          </li>
+      <p>Pour la bonne gestion du site, l'éditeur pourra à tout moment :</p>
+      <ul>
+        <li>
+          Suspendre, interrompre ou limiter l'accès à tout ou partie du site,
+          réserver l'accès au site, ou à certaines parties du site, à une
+          catégorie déterminée d'internaute(s) ;
+        </li>
 
-          <li>
-            Supprimer toute information pouvant en perturber le fonctionnement
-            ou entrant en contravention avec les lois nationales ou
-            internationales en vigueur ;
-          </li>
+        <li>
+          Supprimer toute information pouvant en perturber le fonctionnement ou
+          entrant en contravention avec les lois nationales ou internationales
+          en vigueur ;
+        </li>
 
-          <li> Suspendre le site afin de procéder à des mises à jour.</li>
-        </ul>
-      </p>
+        <li> Suspendre le site afin de procéder à des mises à jour.</li>
+      </ul>
       <h3>ARTICLE 6 : RESPONSABILITES </h3>
       <p>
         L'éditeur n'est responsable que du contenu qu'il a lui-même édité.
         L'éditeur n'est pas responsable :
-        <ul>
-          <li>
-            En cas de problématique ou défaillance techniques, informatiques ou
-            de compatibilité du site avec un matériel ou logiciel quel qu'il
-            soit ;
-          </li>
-          <li>
-            Des dommages directs ou indirects, matériels ou immatériels,
-            prévisibles ou imprévisibles résultant de l'utilisation ou des
-            difficultés d'utilisation du site ou des services ;
-          </li>
-          <li>
-            Des caractéristiques intrinsèques de l'internet, notamment celles
-            relatives au manque de fiabilité et au défaut de sécurisation des
-            informations y circulant ;
-          </li>
+      </p>
+      <ul>
+        <li>
+          En cas de problématique ou défaillance techniques, informatiques ou de
+          compatibilité du site avec un matériel ou logiciel quel qu'il soit ;
+        </li>
+        <li>
+          Des dommages directs ou indirects, matériels ou immatériels,
+          prévisibles ou imprévisibles résultant de l'utilisation ou des
+          difficultés d'utilisation du site ou des services ;
+        </li>
+        <li>
+          Des caractéristiques intrinsèques de l'internet, notamment celles
+          relatives au manque de fiabilité et au défaut de sécurisation des
+          informations y circulant ;
+        </li>
+        <p>
           Des contenus ou activités illicites utilisant son site et ce, sans
           qu'il en ait pris dûment connaissance. Par ailleurs, le site ne
           saurait garantir l'exactitude, la complétude, et l'actualité des
           informations qui y sont diffusées.
-        </ul>
-        L'utilisateur est responsable :
-        <ul>
-          <li>De la protection de son matériel et de ses données ;</li>
+        </p>
+      </ul>
+      L'utilisateur est responsable :
+      <ul>
+        <li>De la protection de son matériel et de ses données ;</li>
 
-          <li> De l'utilisation qu'il fait du site ou de ses services ;</li>
+        <li> De l'utilisation qu'il fait du site ou de ses services ;</li>
 
-          <li>
-            S'il ne respecte pas les présentes conditions générales
-            d'utilisation.
-          </li>
-        </ul>
-      </p>
+        <li>
+          S'il ne respecte pas les présentes conditions générales d'utilisation.
+        </li>
+      </ul>
       <h3>ARTICLE 7 : LIENS HYPERTEXTES </h3>
       <p>
         Le site peut contenir des liens hypertextes pointant vers d'autres sites

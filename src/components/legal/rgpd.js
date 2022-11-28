@@ -1,18 +1,7 @@
-import { Box } from "@mui/material"
 import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
-const Rgpd = () => {
-  const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `)
-  const { title } = data.site.siteMetadata
+import { Box } from "@mui/material"
 
+const Rgpd = () => {
   return (
     <Box>
       <h1>Politique de confidentialité</h1>
@@ -90,7 +79,7 @@ const Rgpd = () => {
       <p>
         Notre hébergeur possède sa propre politique de confidentialité
         concernant l'utilisation de vos données que vous pouvez consulter en
-        tout temps sur le site de Netlify.
+        tout temps sur son site web.
       </p>
       <h3>ARTICLE 9 : CONSENTEMENT A NOTRE POLITIQUE</h3>
       <p>

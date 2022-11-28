@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `NOMBRE EN LETTRES`,
     description: `description`,
-    siteUrl: `https://www.nombre-en-lettres.com/`,
+    siteUrl: `http://localhost:8000`,
   },
   plugins: [
     `gatsby-plugin-image`,
