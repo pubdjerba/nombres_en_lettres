@@ -7,6 +7,7 @@ import useNumberToLetter from "../../components/lib/numberToLetter"
 import DisplayResultValue from "../../components/forms/toConvertForm/displayResultValue"
 import { Link } from "gatsby"
 import PageBody from "../../components/body"
+import Seo from "../../components/layout/seo"
 
 const items = [-100, -50, -10, -1, 1, 10, 50, 100]
 
@@ -20,7 +21,7 @@ const ConvertPage = props => {
     setVisible(visible => (visible = true))
   }, [value, setNumbertoletter])
   const nb = props.data.dbJson.number
-  console.log(props)
+
   return (
     <Layout>
       <Box sx={{ my: "80px", textAlign: "center" }}>
@@ -51,6 +52,7 @@ const ConvertPage = props => {
         <FormInput
           onSubmit={data => setValue(value => (value = data.inputValue))}
         />
+
         <Box sx={{ mt: "1rem" }}>
           {visible && (
             <Typography fontWeight="600" variant="body1" color="#1187F3">
@@ -88,6 +90,13 @@ const ConvertPage = props => {
 }
 
 export default ConvertPage
+export const Head = props => (
+  <Seo
+    title={`${props.data.dbJson.number} en Lettres`}
+    description={`Comment Ecrire ${props.data.dbJson.number} en Lettres ?  `}
+  />
+)
+
 export const query = graphql`
   query ($id: String) {
     dbJson(id: { eq: $id }) {

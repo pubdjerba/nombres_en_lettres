@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `NOMBRE EN LETTRES`,
-    description: `description`,
-    siteUrl: `http://localhost:8000`,
+    title: `NOMBRES EN LETTRES`,
+    description: `chiffes et nombres en lettres `,
+    siteUrl: `http://www.nombres-en-lettres.com`,
   },
   plugins: [
     `gatsby-plugin-image`,
@@ -37,9 +37,6 @@ module.exports = {
         short_name: `starter`,
         start_url: `/`,
         background_color: `#663399`,
-        // This will impact how browsers show your PWA/website
-        // https://css-tricks.com/meta-theme-color-and-trickery/
-        // theme_color: `#663399`,
         display: `minimal-ui`,
         icon: `src/images/favicon.png`, // This path is relative to the root of the site.
       },

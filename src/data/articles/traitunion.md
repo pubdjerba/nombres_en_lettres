@@ -1,30 +1,23 @@
 ---
-slug: "my-first-post"
-date: "2019-05-04"
-title: "My first blog post"
+slug: "rectifications"
+title: "Les rectifications de 1990"
 ---
 
-Ah, qu'est ce qu'il y a ?
-Je sais que 80 personnes s. S'il y a un nombre juste après, mais ma grand-mère m'a dit que 80000000 écrit comme ça, c'était faux, qu'il fallait lui ajouter 1S du pluriel et en plus, il y avait trop de traits d'union. Je comprends plus, tu peux m'aider.
-Sans pro ?
-Même effectivement, l'orthographe des nombres paraît parfois un peu compliqué mais si tu écoutes bien ce que je vais dire et que tu t'entraines aussi à écrire les nombres, je t'assure que tu seras capable d'écrire n'importe quel nombre et sans erreur.
-Mais il y a trop de nombres, je saurai jamais tous les écrire.
-Eh bien si j'ai une bonne nouvelle pour toi. Les mots qui permettent d'écrire la plupart des nombres ne sont pas très nombreux.
-Ah bon ?
-Oui, je t'assure, regardons les premiers, il y a 0123456789 et 10 tu les as appris lorsque tu étais plus jeune.
-Ah oui, j'ai *\*\*.
-Très bien.
-Leur orthographe provient principalement du latin, comme le reste des nombres d'ailleurs, autre chose qu'il est important de savoir pour l'orthographe, c'est que chacun d'eux est un déterminant numéral, c'est à dire qu'il désigne un nombre et ces déterminants sont invariables, leur écriture ne changera pas.
+Un, deux, trois, quatre, cinq, six, sept, huit, neuf et dix
+L'orthographe des nombres provient principalement du latin, autre chose qu'il est important de savoir pour l'orthographe, c'est que chacun d'eux est un déterminant numéral, c'est à dire qu'il désigne un nombre et ces déterminants sont invariables, leur écriture ne changera pas.
+
 Pourtant, certains mots changent, non ?
-Oui, ils ne sont que 3 déterminants à le faire. Tiens, il y en a un d'ailleurs.
+
+Oui, ils ne sont que trois déterminants à le faire. Tiens, il y en a un d'ailleurs.
 Dans cette liste ?
 À alors, où est-il ici ?
-Non, tu vois on dit bien les 4 amis 4 est invariable même si on a très envie de mettre 1S car il se termine par 1E alors que les mots qui l'entourent ont bien la marque du pluriel. Non, ce déterminant c'est un qui peut devenir féminin. Par exemple, il a écrit une page.
+Non, tu vois on dit bien les quatre amis quatre est invariable même si on a très envie de mettre un "S" car il se termine par "e" alors que les mots qui l'entourent ont bien la marque du pluriel. Non, ce déterminant c'est un qui peut devenir féminin. Par exemple, il a écrit une page.
 Ah oui, et moi, qui cherchais à mettre un.
-Continuons ensuite avec 11 12 13 14 15 et 16. Tu as remarqué qu'il y a 1Z pour chacun de ces nombres et que le son est dans 13 et 16 s'écrit avec EI.
+Continuons ensuite avec douze treize quatorze quinze et seize . Tu as remarqué qu'il y a "z" pour chacun de ces nombres et que le son est dans treize et treize s'écrit avec "ei".
 Oui, mais bizarrement, c'est pas cela qui me passe les plus durs.
 Cela ne m'étonne pas. Comme je te l'ai dit, ils sont invariables. Il suffit de les apprendre correctement une fois et c'est fait.
 Ma vie.
+
 Poursuivons avec 171819.
 Là, on peut se rendre compte qu'il n'y.
 A pas de mots, nouveau.
@@ -36,6 +29,7 @@ Uniquement pour le nombre inférieur à 100 ne possédant pas le mot et.
 Ah, c'est pour ça que ma mamie disait qu'il y.
 Avait trop de traits.
 D'Union c'est la grande modification qu'il y a eu pour les nombres, mais les 2 Écritures restent justes.
+
 Oui, d'accord.
 Continuons avec les vingtaines. Il y a d'abord 20 qui se terminent par 1G et 1T. En souvenir du mot vinti qui signifie 20 en latin.
 Nous avons ensuite 21 qui contient le mot et ainsi que 2 traits d'union. Puis 22, 23, 24, et cetera. À partir de là, il y aura peu de changements, seuls les dizaines changent. Il y aura 30.
@@ -48,7 +42,7 @@ Et pourquoi d'ailleurs ?
 Ça, c'est un autre sujet que j'aborde dans cette vidéo.
 Poursuivons avec le nombre 80. Et là attention, il faut être très attentif.
 Je t'avais dit que la plupart des nombres s'écrivent avec des mots invariables, mais les mots vains et sans peuvent prendre la marque du pluriel, c'est à dire 1S lorsqu'il y a plusieurs vingtaines ou plusieurs centaines.
-Par exemple, 80 c'est bien 4*20.
+Par exemple, 80 c'est bien 4\*20.
 Il y a plusieurs fois 20 donc il prend 1S.
 200 c'est 2\*100. Il y a plusieurs fois 100, donc ce mot prend lui aussi 1S.
 Et Ben, c'est facile.
@@ -94,4 +88,3 @@ Il suffit ensuite d'ajouter, comme pour les autres dizaines, ce qui suit.
 Septante-et-un, septante-deux, septante-trois, septante-quatre et cetera.
 Ensuite, je sais qu'une majorité de francophones prononçant septante et nonante utilisent le nombre quatre-vingts, mais d'autres disent, Huitante, donc allons y. Il y a 8 ans et 18 ans, 28 ans, 38, 34, et cetera.
 Et enfin, nous avons nonante et un nonante 2 nonante 3 jusqu'à nonante 9.
-Il est poursuivant avec les nombres 80 et 100 en cliquant sur ce lien, faute de quoi nous allons arriver très très rapidement à la fin de la vidéo.

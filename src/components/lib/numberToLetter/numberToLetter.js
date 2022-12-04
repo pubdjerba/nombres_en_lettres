@@ -110,8 +110,7 @@ function Dizaine(nombre) {
 } //-----------------------------------------------------------------------
 
 const NumberToLetter = nombre => {
-  var i, j, n, quotient, reste, nb
-  var ch
+  var n, quotient, reste, nb
   var numberToLetter = ""
   //__________________________________
 

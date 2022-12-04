@@ -3,6 +3,7 @@ import Layout from "../components/layout"
 import Banner from "../components/banner"
 import ToConvertForm from "../components/forms/toConvertForm"
 import PageBody from "../components/body"
+import Seo from "../../src/components/layout/seo"
 const IndexPage = () => (
   <>
     <Layout>
@@ -12,5 +13,7 @@ const IndexPage = () => (
     </Layout>
   </>
 )
+
+export const Head = () => <Seo title="chiffres en lettres" />
 
 export default IndexPage

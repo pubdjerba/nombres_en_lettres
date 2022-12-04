@@ -18,8 +18,11 @@ export default function Contact() {
           alignItems: "center",
         }}
       >
-        <Avatar sx={{ m: 1, bgcolor: "secondary.main", p: 1 }}>
-          <StaticImage src="../../images/logo.svg" alt="nombres en lettres" />
+        <Avatar sx={{ m: 1, bgcolor: "primary.main", p: 1 }}>
+          <StaticImage
+            src="../../images/logo.svg"
+            alt="nombres en lettres logo"
+          />
         </Avatar>
         <Typography component="h1" variant="h5">
           Nous Contacter
