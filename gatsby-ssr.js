@@ -4,6 +4,12 @@
  * See: https://www.gatsbyjs.com/docs/ssr-apis/
  */
 
-exports.onRenderBody = ({ setHtmlAttributes }) => {
-  setHtmlAttributes({ lang: `en` })
+import React from "react"
+import RootElement from "./src/components/root-element"
+
+export const wrapRootElement = ({ element }) => {
+  return <RootElement>{element}</RootElement>
+}
+export const onRenderBody = ({ setHtmlAttributes }) => {
+  return setHtmlAttributes({ lang: `fr` })
 }

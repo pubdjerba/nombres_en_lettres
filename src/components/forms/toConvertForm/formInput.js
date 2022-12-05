@@ -28,7 +28,7 @@ const StyledPaper = styled(Paper)`
 `
 
 export default function FormInput(props) {
-  const { register, defaultValue, handleSubmit } = useForm()
+  const { register, handleSubmit } = useForm()
 
   return (
     <Box>
